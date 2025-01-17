@@ -13,7 +13,7 @@ The Formula 1 Regulation RAG System aims to bridge this gap by combining cutting
 - An engaging platform for fans to predict race outcomes and explore the intricacies of the sport.
 
 ## Project Overview
-### Objective
+### Objective 
 The goal of the Formula 1 Regulation RAG System is to create a Retrieval-Augmented Generation (RAG) platform that delivers:
 
 - Comprehensive insights into Formula 1 regulations and race data.
