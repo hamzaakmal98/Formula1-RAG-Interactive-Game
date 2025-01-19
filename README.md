@@ -12,7 +12,7 @@ The Formula 1 Regulation RAG System aims to bridge this gap by combining cutting
 - A decision-support system for the FIA to ensure fair and accurate penalties.
 - An engaging platform for fans to predict race outcomes and explore the intricacies of the sport.
 
-## Project Overview:
+## Project Overview
 ### Objective 
 The goal of the Formula 1 Regulation RAG System is to create a Retrieval-Augmented Generation (RAG) platform that delivers:
 
