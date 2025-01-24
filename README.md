@@ -4,7 +4,7 @@
 Formula 1 is a sport renowned for its high-speed drama, technological innovation, and global fan base. However, navigating its complexities—such as intricate race strategies, evolving regulations, and driver statistics—can be challenging. Fans often struggle to find comprehensive, accessible information, while the FIA, the sport's governing body, has faced criticism for inconsistent regulatory decisions that impact race outcomes and championships.
 
 ## Background
-An example of the challenges within Formula 1 is the controversial 2021 Abu Dhabi Grand Prix, where regulatory decisions heavily influenced the championship outcome. These controversies underscore the need for greater transparency and data-driven decision-making in the sport.
+An example of the challenges within Formula 1 is the controversial 2021 Abu Dhabi Grand Prix, where regulatory decisions heavily influenced the championship outcome. These controversies underscore the need for greater transparency and data-driven decision-making in the sport. 
 
 The Formula 1 Regulation RAG System aims to bridge this gap by combining cutting-edge AI technology with a user-friendly platform to provide:
        
