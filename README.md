@@ -1,5 +1,5 @@
 # Formula_1_Regulations_RAG_Systems
-
+ 
 ## Introduction
 Formula 1 is a sport renowned for its high-speed drama, technological innovation, and global fan base. However, navigating its complexities—such as intricate race strategies, evolving regulations, and driver statistics—can be challenging. Fans often struggle to find comprehensive, accessible information, while the FIA, the sport's governing body, has faced criticism for inconsistent regulatory decisions that impact race outcomes and championships.
 
