@@ -83,7 +83,7 @@ The system offers a suite of features for:
   - Used to develop the predictive game module.
   - Implements various classification and regression models for race outcome predictions.
 
-
+''' mermaid
 graph TD
     User([User or Official]) --> UI[Streamlit Frontend]
     
@@ -111,6 +111,7 @@ graph TD
     style Snowflake fill:#29b5e8,color:#fff
     style Pinecone fill:#000,color:#fff
     style GPT4 fill:#10a37f,color:#fff
+'''
 
 ## Project Plan and Timeline
 ### Phase 1: Core Data Setup and Backend Foundation (Week 1)
