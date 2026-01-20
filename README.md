@@ -85,25 +85,26 @@ The system offers a suite of features for:
 
 
 graph TD
-    User([User/Official]) --> UI[Streamlit Frontend]
+    User([User or Official]) --> UI[Streamlit Frontend]
     
     subgraph Data_Pipeline [Data Engineering - Airflow]
-        Docs[FIA Regulation PDFs] -->|Adobe Extractor| Airflow[Airflow Orchestrator]
+        Docs[FIA Regulation PDFs] --> Adobe[Adobe Extractor]
+        Adobe --> Airflow[Airflow Orchestrator]
         Live_Data[OpenF1 API] --> Airflow
     end
 
     subgraph Storage_Layer [Data Storage]
-        Airflow -->|Structured Stats| Snowflake[(Snowflake Data Warehouse)]
-        Airflow -->|Vector Embeddings| Pinecone[(Pinecone Vector DB)]
-        Airflow -->|Raw Files| S3[(Amazon S3)]
+        Airflow --> Snowflake[(Snowflake Data Warehouse)]
+        Airflow --> Pinecone[(Pinecone Vector DB)]
+        Airflow --> S3[(Amazon S3)]
     end
 
-    subgraph Intelligence_Layer [AI & ML Logic]
+    subgraph Intelligence_Layer [AI and ML Logic]
         UI --> FastAPI[FastAPI Backend]
-        FastAPI -->|SQL Query| Snowflake
-        FastAPI -->|Semantic Search| Pinecone
-        FastAPI -->|Reasoning| GPT4[OpenAI GPT-4]
-        FastAPI -->|Predictions| SKLearn[Scikit-Learn Model]
+        FastAPI --> Snowflake
+        FastAPI --> Pinecone
+        FastAPI --> GPT4[OpenAI GPT-4]
+        FastAPI --> SKLearn[Scikit-Learn Model]
     end
 
     style UI fill:#e10600,color:#fff
