@@ -113,45 +113,6 @@ graph TD
     style GPT4 fill:#10a37f,color:#fff
 ```
 
-## Project Plan and Timeline
-### Phase 1: Core Data Setup and Backend Foundation (Week 1)
-1. Extract and store FIA regulation documents.
-2. Set up Snowflake and Pinecone databases.
-3. Develop the FastAPI backend for handling data requests.
-
-### Phase 2: Build Minimum Viable Product (MVP) (Week 2)
-1. Create a basic Streamlit interface with dropdowns and chatbot capabilities.
-2. Integrate real-time race data using the OpenF1 API.
-3. Deploy the RAG bot for regulation-based queries.
-
-### Phase 3: UI Finalization and Testing (Week 3)
-1. Enhance the user interface for a seamless experience.
-2. Conduct functional and user acceptance testing.
-3. Document the platform for ease of use and deployment.
-
-## Risks and Mitigation Strategies
-### Risks
-1. **Time Constraints**: Limited development window.
-2. **Data Integration Challenges**: Potential compatibility issues between APIs and databases.
-3. **API Reliability**: Outages or usage rate limitations may hinder real-time data feeds.
-4. **Testing Limitations**: Insufficient time for thorough testing may leave undetected issues.
-
-### Mitigation
-1. Prioritize core features and use parallel development for efficiency.
-2. Standardize data formats and perform incremental integration testing.
-3. Cache data to mitigate API reliability issues.
-4. Focus on critical bug fixes during testing to ensure core functionality.
-
-## Deliverables
-### Interactive Platform
-- Access to regulations, race data, and predictive tools.
-- Chatbot for regulation-related queries.
-
-### Predictive Game
-- Engaging feature to increase fan interaction and knowledge of race dynamics.
-
-### Documentation
-- Comprehensive guide for users and developers.
 
 ## Setup Instructions
 ### Step 1: Clone the Repository
