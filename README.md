@@ -83,6 +83,34 @@ The system offers a suite of features for:
   - Used to develop the predictive game module.
   - Implements various classification and regression models for race outcome predictions.
 
+
+graph TD
+    User([User/Official]) --> UI[Streamlit Frontend]
+    
+    subgraph Data_Pipeline [Data Engineering - Airflow]
+        Docs[FIA Regulation PDFs] -->|Adobe Extractor| Airflow[Airflow Orchestrator]
+        Live_Data[OpenF1 API] --> Airflow
+    end
+
+    subgraph Storage_Layer [Data Storage]
+        Airflow -->|Structured Stats| Snowflake[(Snowflake Data Warehouse)]
+        Airflow -->|Vector Embeddings| Pinecone[(Pinecone Vector DB)]
+        Airflow -->|Raw Files| S3[(Amazon S3)]
+    end
+
+    subgraph Intelligence_Layer [AI & ML Logic]
+        UI --> FastAPI[FastAPI Backend]
+        FastAPI -->|SQL Query| Snowflake
+        FastAPI -->|Semantic Search| Pinecone
+        FastAPI -->|Reasoning| GPT4[OpenAI GPT-4]
+        FastAPI -->|Predictions| SKLearn[Scikit-Learn Model]
+    end
+
+    style UI fill:#e10600,color:#fff
+    style Snowflake fill:#29b5e8,color:#fff
+    style Pinecone fill:#000,color:#fff
+    style GPT4 fill:#10a37f,color:#fff
+
 ## Project Plan and Timeline
 ### Phase 1: Core Data Setup and Backend Foundation (Week 1)
 1. Extract and store FIA regulation documents.
@@ -166,6 +194,17 @@ airflow db init
 airflow webserver -p 8080
 airflow scheduler
 ```
+
+🚀 Getting Started
+Prerequisites
+
+    Python 3.10+
+
+    Poetry (Dependency Manager)
+
+    Docker & Docker Compose
+
+    Accounts for: OpenAI, Snowflake, Pinecone, and AWS (S3).
 
 ### Execution Instructions
 #### Step 1: Start the Backend Server
